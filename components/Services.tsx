@@ -47,7 +47,7 @@ type ServiceCardProps = {
 
 function ServiceCard({ image, title, description }: ServiceCardProps) {
     return (
-        <div className="flex flex-col gap-3 bg-secondary p-2.5 max-md:w-[350px] w-[295px]">
+        <div className="flex flex-col gap-3 bg-secondary p-2.5 max-md:w-[340px] w-[295px]">
             <span>
                 <Image src={image} alt={title} width={25} height={25} />
             </span>

@@ -39,7 +39,7 @@ type PriceCardProps = {
 
 function PriceCard({ category, description, price, points, cardIndex }: PriceCardProps) {
     return (
-        <div className="rounded-xl p-2.5 bg-gradient-to-b from-secondary via-[#5F265C] to-secondary h-[700px] max-w-[370px]">
+        <div className="rounded-xl p-2.5 bg-gradient-to-b from-secondary via-[#5F265C] to-secondary h-[700px] max-w-[340px]">
             {cardIndex === 1 ? <span className="text-7xl font-semibold opacity-25">Popular</span> : null}
             <div className={`flex flex-col gap-3  ${cardIndex === 1 ? "mt-[-2rem]" : "mt-10"}`}>
                 <div className="flex flex-col items-center justify-center text-center">
