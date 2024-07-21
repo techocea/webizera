@@ -1,11 +1,12 @@
+"use client";
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./ui/MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import GradientCircle from "./ui/GradientBackground";
 
-
+import MagicButton from "./ui/MagicButton";
 
 export default function Hero() {
+
     return (
         <section className="py-20 max-md:pb-20 max-md:pt-0 z-20" id="home">
             <div className="h-screen w-full dark:bg-primary bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flexitems-center justify-center absolute top-0 left-0">
@@ -14,7 +15,10 @@ export default function Hero() {
             <div className="flex items-center justify-center text-center relative my-20 z-10 h-full">
                 <GradientCircle />
                 <div className="flex flex-col items-center max-w-3xl max-md:mt-[4rem]">
-                    <h2 className="uppercase tracking-widest text-xs text-center text-blue-100">
+                    <h2
+                        id="hero__heading"
+                        className="uppercase tracking-widest text-xs text-center text-blue-100"
+                    >
                         Transforming Ideas into Digital Experiences
                     </h2>
                     <TextGenerateEffect
@@ -23,6 +27,7 @@ export default function Hero() {
                     />
                     <a href="#portfolio">
                         <MagicButton
+                            id="cta__button"
                             title="See our work"
                             icon={<FaLocationArrow />}
                             position="right"

@@ -1,4 +1,5 @@
 export default function MagicButton({ title, icon, position, handleClick, otherClasses }: {
+    id?: string;
     title: string;
     icon: React.ReactNode; position: string;
     handleClick?: () => void;

@@ -10,11 +10,12 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative bg-primary flex justify-center items-center flex-col overflow-hidden sm:px-10">
+    <main className="bg-primary flex justify-center items-center flex-col overflow-hidden sm:px-10">
       <div className="max-w-7xl w-full">
         <FloatingNav
           navItems={navItems}
         />
+
         <Hero />
         <Services />
         <Portfolio />
