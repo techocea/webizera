@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
-import { ThemeProvider } from "./provider";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const josefinSans = Josefin_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,16 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={josefinSans.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Analytics />
-        </ThemeProvider>
+      <body className={manrope.className}>
+        {children}
+        <ToastContainer />
+        <Analytics />
       </body>
     </html>
   );

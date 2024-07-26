@@ -1,63 +1,38 @@
 
 import { Pricingdata } from "@/utils";
+import PriceCard from "./PriceCard";
+import HeaderTitle from "./HeaderTitle";
 
 export default function Pricing() {
     return (
-        <section className="py-10 max-md:px-0 lg:py-20 border-t border-b border-gray-500" id="pricing">
-            <h3 className="uppercase font-semibold text-[16px] text-secondary text-center mb-4">
-                pricing
-            </h3>
-            <div
-
-                className="flex flex-wrap items-center justify-center gap-4">
-                {Pricingdata.map((item, index) => (
-                    <PriceCard
-                        key={index}
-                        cardIndex={index}
-                        category={["Basic", "Premium", "Enterprise"][index]}
-                        description={[
-                            "Responsive website with essential features to establish your online presence",
-                            "Responsive website with fully customized website with advanced features",
-                            "Delivers a comprehensive web solution with custom integrations, advanced functionality",
-                        ][index]}
-                        price={["499", "1299", "1999"][index]}
-                        points={item.points}
-                    />
-                ))}
+        <section className="lg:py-24 lg:px-32 py-20 px-8 border-b border-gray-500" id="pricing">
+            <div className="flex flex-col gap-10 max-md:text-center">
+                <div className="max-w-4xl flex flex-col max-md:gap-8">
+                    <HeaderTitle
+                        heading="our prices"
+                        text="6xl" />
+                    <p className="lg:pt-4">
+                        We offer three pricing package for you to choose based on your requirements for your website.
+                    </p>
+                </div>
+                <div
+                    className="flex flex-wrap items-center justify-center lg:gap-4 gap-8">
+                    {Pricingdata.map((item, index) => (
+                        <PriceCard
+                            key={index}
+                            cardIndex={index}
+                            category={["Basic", "Premium", "Enterprise"][index]}
+                            description={[
+                                "Responsive website with essential features to establish your online presence",
+                                "Responsive website with fully customized website with advanced features",
+                                "Delivers a comprehensive web solution with custom integrations, advanced functionality",
+                            ][index]}
+                            price={["499", "1299", "1999"][index]}
+                            points={item.points}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
-    );
-}
-
-type PriceCardProps = {
-    cardIndex: number;
-    category: string;
-    description: string;
-    price: string;
-    points: string[];
-};
-
-function PriceCard({ category, description, price, points, cardIndex }: PriceCardProps) {
-    return (
-        <div className="rounded-xl p-2.5 bg-gradient-to-b from-secondary via-[#5F265C] to-secondary h-[700px] max-w-[340px]">
-            {cardIndex === 1 ? <span className="text-7xl font-semibold opacity-25">Popular</span> : null}
-            <div className={`flex flex-col gap-3  ${cardIndex === 1 ? "mt-[-2rem]" : "mt-10"}`}>
-                <div className="flex flex-col items-center justify-center text-center">
-                    <h1 className="font-semibold text-[64px] capitalize">{category}</h1>
-                    <p className="text-lg leading-5">{description}</p>
-                </div>
-                <div className="flex flex-col gap-1 items-center justify-center text-center">
-                    <p>From</p>
-                    <h1 className="text-6xl font-bold">${price}</h1>
-                </div>
-                <div className="flex items-center justify-center text-center">
-                    <ul>
-                        {points.map((point, i) => (
-                            <li key={i}>{point}</li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        </div>
     );
 }

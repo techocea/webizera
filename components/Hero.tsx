@@ -1,38 +1,46 @@
-"use client";
-import { FaLocationArrow } from "react-icons/fa6";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import GradientCircle from "./ui/GradientBackground";
+import { Button } from "./ui/button";
 
-import MagicButton from "./ui/MagicButton";
+const socialMedia = [
+    { title: "Instagram", url: "https://www.instagram.com/webizera.co/" },
+    {
+        title: "Facebook",
+        url: "https://web.facebook.com/profile.php?id=61550819112955",
+    },
+];
 
 export default function Hero() {
-
     return (
-        <section className="py-20 max-md:pb-20 max-md:pt-0 z-20" id="home">
-            <div className="h-screen w-full dark:bg-primary bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flexitems-center justify-center absolute top-0 left-0">
-                <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-primary bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-            </div>
-            <div className="flex items-center justify-center text-center relative my-20 z-10 h-full">
-                <GradientCircle />
-                <div className="flex flex-col items-center max-w-3xl max-md:mt-[4rem]">
-                    <h2
-                        id="hero__heading"
-                        className="uppercase tracking-widest text-xs text-center text-blue-100"
-                    >
-                        Transforming Ideas into Digital Experiences
-                    </h2>
-                    <TextGenerateEffect
-                        className="text-center  max-md:mb-10 text-[96px] md:text-5xl lg:text-7xl"
-                        words=" We specialize in creating digital solutions to your business needs."
-                    />
-                    <a href="#portfolio">
-                        <MagicButton
-                            id="cta__button"
-                            title="See our work"
-                            icon={<FaLocationArrow />}
-                            position="right"
-                        />
-                    </a>
+        <section className="h-full py-12 px-2 lg:py-16">
+            <div className="flex max-md:flex-col lg:items-start max-md:items-center max-md:text-center max-md:justify-center lg:justify-between w-full lg:px-10">
+                <div className="flex flex-col gap-8 lg:gap-6">
+                    <h1 className="text-3xl lg:text-6xl font-bold lg:max-w-3xl w-full leading-[48px] lg:leading-[80px]">
+                        We specialize in creating digital solutions to your business needs
+                    </h1>
+                    <p className="font-semibold">
+                        Saving the world with exceptional designs,your satisfaction is our
+                        priority
+                    </p>
+                    <div className="mt-6">
+                        <a href="#connect">
+                            <Button
+                                variant="secondary"
+                                className="text-primary uppercase text-xl font-bold rounded-none"
+                            >
+                                Start a project
+                            </Button>
+                        </a>
+                    </div>
+                </div>
+                <div className="flex lg:flex-col gap-4 max-md:mt-16">
+                    {socialMedia.map((item, idx) => (
+                        <ul key={idx}>
+                            <a href={item.url} target="_blank">
+                                <li className="font-thin border-b border-white w-fit cursor-pointer  hover:text-secondary hover:border-b-secondary duration-500 ease-in-out">
+                                    {item.title}
+                                </li>
+                            </a>
+                        </ul>
+                    ))}
                 </div>
             </div>
         </section>

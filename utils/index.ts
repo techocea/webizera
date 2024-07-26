@@ -68,23 +68,3 @@ export const Pricingdata = [
       ],
   },
 ];
-
-export const footerItems = [
-  {
-    title: "Company",
-    links: [
-      { title: "Home", url: "/" },
-      { title: "Services", url: "#services" },
-      { title: "Portfolio", url: "#portfolio" },
-      { title: "Connect", url: "#connect" },
-    ],
-  },
-  {
-    title: "Socials",
-    links: [
-      { title: "Instagram", url: "" },
-      { title: "Facebook", url: "" },
-      { title: "Github", url: "" },
-    ],
-  },
-];

@@ -1,28 +1,22 @@
-import Image from "next/image";
+import HeaderTitle from "./HeaderTitle";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
     return (
-        // <Separator/>
         <section
-            className="py-10 max-md:py-16 border-b border-t border-gray-500 max-md:h-full"
+            className="lg:py-24 lg:px-16 py-20 px-2 border-b border-t border-gray-500 max-md:h-full"
             id="services"
         >
-            <div className="flex flex-wrap md:gap-4 items-center justify-center">
-                <div className="max-w-[435px]   max-md:text-center max-md:mb-10">
-                    <h3 className="uppercase font-semibold text-[16px] text-secondary">
-                        services
-                    </h3>
-                    <p>
-                        We offer comprehensive web design services, from initial concept
-                        sketches to polished, user-friendly websites.
-                    </p>
-                    <br />
-                    <p className="max-md:font-bold max-md:scale-110">
-                        Our development team uses the latest technologies to build
-                        responsive, high-performance websites.
+            <div className="flex flex-col gap-10 lg:items-end lg:justify-end text-center items-center ">
+                <div className="max-w-4xl lg:text-right">
+                    <HeaderTitle
+                        heading="our services"
+                        text="6xl" />
+                    <p className="lg:pt-4 pt-6">
+                        We offer comprehensive web design services, from initial concept sketches to polished, user-friendly websites.<br />Our development team uses the latest technologies to build responsive, high-performance websites.
                     </p>
                 </div>
-                <div className="flex max-md:flex-col items-center gap-4 lg:gap-8">
+                <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-12">
                     <ServiceCard
                         image="/brush.svg"
                         title="ui/ux design"
@@ -33,26 +27,16 @@ export default function Services() {
                         title="web development"
                         description="Superior web development with top-tier UI/UX design, custom integrations, and dedicated support"
                     />
+                    <ServiceCard
+                        image="/revamp.svg"
+                        title="website revamp"
+                        description="With the latest technology we deliver a seamless, user-friendly experience  for your audience."
+                    />
                 </div>
             </div>
         </section>
     );
 }
 
-type ServiceCardProps = {
-    image: string;
-    title: string;
-    description: string;
-};
 
-function ServiceCard({ image, title, description }: ServiceCardProps) {
-    return (
-        <div className="flex flex-col gap-3 bg-secondary p-2.5 max-md:w-[340px] w-[295px]">
-            <span>
-                <Image src={image} alt={title} width={25} height={25} />
-            </span>
-            <h2 className="uppercase font-bold ">{title}</h2>
-            <p className="text-sm leading-[26px]">{description}</p>
-        </div>
-    );
-}
+

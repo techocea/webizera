@@ -4,25 +4,25 @@ import Portfolio from "@/components/Portfolio";
 import Pricing from "@/components/Pricing";
 import Connect from "@/components/Connect";
 
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import { navItems } from "@/utils";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Testimonials from "@/components/Testimonials";
+import WorkProcess from "@/components/WorkProcess";
 
 export default function Home() {
   return (
-    <main className="bg-primary flex justify-center items-center flex-col overflow-hidden sm:px-10">
-      <div className="max-w-7xl w-full">
-        <FloatingNav
-          navItems={navItems}
-        />
-
+    <>
+      <div className="bg-primary text-white max-w-7xl w-full">
+        <Header />
         <Hero />
         <Services />
+        <WorkProcess />
         <Portfolio />
         <Pricing />
+        <Testimonials />
         <Connect />
         <Footer />
       </div>
-    </main>
+    </>
   );
 }
