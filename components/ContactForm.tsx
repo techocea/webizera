@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { toast } from "react-toastify";
@@ -17,14 +17,13 @@ export default function ContactForm() {
     });
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        e.preventDefault();
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setLoading(true)
+        setLoading(true);
 
         try {
             const res = await fetch("/api/contact", {
@@ -34,21 +33,29 @@ export default function ContactForm() {
                 },
                 body: JSON.stringify(formData),
             });
-            const data = await res.json();
-            setLoading(true)
-            setFormData(data);
-            // toast.success("Form submitted successfully!");
 
-            setTimeout(() => {
-                window.location.href = "/";
-            }, 1000);
-            // if (res.ok) {
-            //     toast.success("Form submitted successfully");
-            // }
+            if (res.ok) {
+                const data = await res.json();
+                setFormData({
+                    fullname: "",
+                    contact: "",
+                    email: "",
+                    country: "",
+                    company: "",
+                    message: "",
+                });
+                // toast.success("Form submitted successfully!");
+                setTimeout(() => {
+                    window.location.href = "/";
+                }, 1000);
+            } else {
+                toast.error("Error in submitting the form");
+                console.log("Error in submitting the form");
+            }
         } catch (error) {
-            setLoading(false);
-            toast.error("Error in submitting the form");
             console.log("Error in submitting the form", error);
+        } finally {
+            setLoading(false);
         }
     };
     return (
