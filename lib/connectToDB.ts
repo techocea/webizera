@@ -19,8 +19,6 @@ export const connectToDB = async (): Promise<void> => {
   try {
     await mongoose.connect(mongoURL, {
       dbName: "webizera",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
     isConnected = true;
     console.log("MongoDB is connected");
