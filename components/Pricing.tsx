@@ -5,7 +5,7 @@ import HeaderTitle from "./HeaderTitle";
 
 export default function Pricing() {
     return (
-        <section className="lg:py-24 lg:px-32 py-20 px-8 border-b border-gray-500" id="pricing">
+        <section className="lg:py-24 lg:px-32 py-20 px-4 border-b border-gray-500" id="pricing">
             <div className="flex flex-col gap-10 max-md:text-center">
                 <div className="max-w-4xl flex flex-col max-md:gap-8">
                     <HeaderTitle

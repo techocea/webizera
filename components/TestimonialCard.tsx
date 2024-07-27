@@ -27,12 +27,12 @@ const clientTestimonials = [
 ];
 export default function TestimonialCard() {
     return (
-        <div className="mt-10">
+        <div className="mt-10  lg:max-w-lg max-w-[290px] w-full">
             <Carousel plugins={[
                 Autoplay({
                     delay: 2000,
                 }),
-            ]} className="flex max-md:flex-col items-center justify-center max-w-[300px] lg:max-w-lg">
+            ]} className="flex max-md:flex-col items-center justify-center">
                 <CarouselContent>
                     {clientTestimonials.map((item) => (
                         <CarouselItem key={item.company} className="pl-8 flex flex-col gap-4">
