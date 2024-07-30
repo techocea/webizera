@@ -11,22 +11,16 @@ import WorkProcess from "@/components/WorkProcess";
 
 export default function Home() {
   return (
-    <>
-<<<<<<< HEAD
-      <div className="bg-primary text-white">
-=======
-      <div className="bg-primary text-white lg:max-w-7xl 2xl:w-screen-2xl w-full">
->>>>>>> b2b8179dbcf9e8ea10f587ad678d2e4ece51725a
-        <Header />
-        <Hero />
-        <Services />
-        <WorkProcess />
-        <Portfolio />
-        <Pricing />
-        <Testimonials />
-        <Connect />
-        <Footer />
-      </div>
-    </>
+    <div className="bg-primary text-white">
+      <Header />
+      <Hero />
+      <Services />
+      <WorkProcess />
+      <Portfolio />
+      <Pricing />
+      <Testimonials />
+      <Connect />
+      <Footer />
+    </div>
   );
 }
