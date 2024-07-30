@@ -12,7 +12,7 @@ import WorkProcess from "@/components/WorkProcess";
 export default function Home() {
   return (
     <>
-      <div className="bg-primary text-white max-w-7xl w-full">
+      <div className="bg-primary text-white lg:max-w-7xl 2xl:w-screen-2xl w-full">
         <Header />
         <Hero />
         <Services />
