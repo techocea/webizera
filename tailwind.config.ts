@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage:{
+        "card-gradient":"radial-gradient(circle, rgba(118,60,172,1) 0%, rgba(115,57,161,1) 14%, rgba(95,38,92,1) 90%)",
+        "premium-gradient":"linear-gradient(180deg, rgba(172,60,156,1) 10%, rgba(115,57,161,1) 38%, rgba(114,56,159,1) 63%, rgba(95,38,92,1) 89%);",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 export default function Services() {
     return (
         <section
-            className="lg:py-24 lg:px-16 py-20 px-2 border-b border-t border-gray-500 max-md:h-full"
+            className="lg:py-24 lg:px-20 2xl:px-32 py-20 px-4 md:px-10 border-b border-t border-gray-500 max-md:h-full"
             id="services"
         >
             <div className="flex flex-col gap-10 lg:items-end lg:justify-end text-center items-center ">

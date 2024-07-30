@@ -1,10 +1,49 @@
 export const navItems = [
-  { name: "Home", link: "/" },
-  { name: "Services", link: "#services" },
-  { name: "Portfolio", link: "#portfolio" },
-  { name: "Pricing", link: "#pricing" },
-  { name: "Connect", link: "#connect" },
+    { title: "home", href: "/" },
+    { title: "services", href: "#services" },
+    { title: "portfolio", href: "#portfolio" },
+    { title: "pricing", href: "#pricing" },
+    { title: "testimonials", href: "#testimonials" },
+    { title: "contact us", href: "#connect" },
 ];
+
+export const workProcessData = [
+    {
+        id:1,
+        title:"Research",
+        description:"To gather information and insights that will inform the rest of the project."
+    },
+    {
+        id:2,
+        title:"Concept",
+        description:"To develop a clear, strategic vision for the project based on the research findings."
+    },
+    {
+        id:3,
+        title:"Design",
+        description:"To create visually appealing, user-friendly designs that align with the concept."
+    },
+    {
+        id:4,
+        title:"Development",
+        description:"To turn the design into a functional website or application."
+    },
+]
+
+export const imageGallery = [
+    {
+        id:1,
+        url:"/develop.png"
+    },
+    {
+        id:2,
+        url:"/concept.png"
+    },
+    {
+        id:3,
+        url:"/design.png"
+    },
+]
 
 export const portfolioData = [
   {
@@ -40,6 +79,8 @@ export const Pricingdata = [
           "Contact form",
           "Premium Images",
           "Social media integration",
+          "Google Map integration",
+          "14 days turnaround",
           "2 rounds of revision",
       ],
   },
@@ -52,6 +93,9 @@ export const Pricingdata = [
           "Contact form",
           "Premium Images",
           "Social media integration",
+          "Google Map integration",
+          "XML sitemap",
+          "45 days turnaround",
           "2 rounds of revision",
       ],
   },
@@ -60,10 +104,14 @@ export const Pricingdata = [
           "Custom website",
           "5+ pages",
           "Mobile responsive",
+          "UI/UX",
           "Custom icons",
           "Contact form",
           "Premium Images",
           "Social media integration",
+          "Google Map integration",
+          "XML sitemap",
+          "60 days turnaround",
           "3 rounds of revision",
       ],
   },

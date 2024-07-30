@@ -11,7 +11,7 @@ export default function Connect() {
         window.open(url, "_blank");
     };
     return (
-        <section className="lg:py-24 lg:px-16 py-20 px-4" id="connect">
+        <section className="lg:py-24 lg:px-20 2xl:px-32 py-20 px-4" id="connect">
             <div className=" lg:flex lg:max-w-7xl justify-between w-full ">
                 <div className="flex md:hidden items-center justify-center mb-16">
                     <h1 className="text-6xl font-bold flex text-left uppercase">
@@ -29,7 +29,7 @@ export default function Connect() {
                         project
                     </h1>
                 </div>
-                <div className="lg:max-w-xl text-center text-2xl leading-normal flex flex-col ">
+                <div className="lg:max-w-lg text-center text-xl leading-normal flex flex-col ">
                     <h1>
                         Ready to transform your vision into stunning reality? Reach out to
                         us, and let’s create something extraordinary together!{" "}
