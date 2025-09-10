@@ -1,22 +1,21 @@
-import Services from "@/components/Services";
-import Hero from "@/components/Hero";
-import Portfolio from "@/components/Portfolio";
-import Pricing from "@/components/Pricing";
-import Connect from "@/components/Connect";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Testimonials from "@/components/Testimonials";
-import WorkProcess from "@/components/WorkProcess";
+import Services from "@/components/shared/Services";
+import Hero from "@/components/shared/Hero";
+import Portfolio from "@/components/shared/Portfolio";
+import Pricing from "@/components/shared/Pricing";
+import Connect from "@/components/shared/Connect";
+import Footer from "@/components/shared/Footer";
+import Header from "@/components/shared/Header";
+import Testimonials from "@/components/shared/Testimonials";
+import Stats from "@/components/shared/Stats";
 
 export default function Home() {
   return (
-    <div className="bg-primary text-white">
+    <div className="hero-vignette">
       <Header />
       <Hero />
-      <Services />
-      <WorkProcess />
       <Portfolio />
+      <Services />
+      <Stats />
       <Pricing />
       <Testimonials />
       <Connect />

@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
-const manrope = Manrope({
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700"],
 });
@@ -27,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>
+      <body className={outfit.className}>
         {children}
-        <ToastContainer />
+        {/* <ToastContainer /> */}
         <Analytics />
       </body>
     </html>
