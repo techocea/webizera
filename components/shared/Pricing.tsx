@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Pricing() {
     return (
-        <section className="px-8 my-32" id="services">
+        <section className="px-4 mt-16 lg:mt-20" id="services">
             <div className="flex flex-col gap-6 items-center justify-center text-center">
                 <div className="lg:max-w-3xl w-full space-y-4">
                     <Badge title="Services" />
@@ -17,7 +17,7 @@ export default function Pricing() {
                         personalized quote.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10 lg:mt-12">
                     {PRICING.map((item) => (
                         <PriceCard
                             key={item.id}

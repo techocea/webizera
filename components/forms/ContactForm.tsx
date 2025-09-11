@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const ContactForm = () => {
     return (
-        <Card className="p-8 bg-accent border w-full space-y-6">
+        <Card className="p-4 lg:p-8 bg-accent border w-full space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-4">
                 <div className="flex flex-col space-y-2 text-muted">
                     <label htmlFor="fullName">Full Name*</label>

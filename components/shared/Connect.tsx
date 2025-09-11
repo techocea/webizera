@@ -14,17 +14,17 @@ export default function Connect() {
         window.open(url, "_blank");
     };
     return (
-        <section className="my-28 px-8" id="connect">
-            <div className="flex flex-col lg:flex-row max-w-5xl w-full mx-auto gap-8">
+        <section className="px-4 mt-16 lg:mt-20" id="connect">
+            <div className="flex flex-col lg:flex-row lg:max-w-5xl w-full mx-auto gap-8">
                 <div className="flex">
-                    <Card className="p-8 bg-accent border max-w-sm w-full">
+                    <Card className="p-8 bg-accent border lg:max-w-sm w-full">
                         <CardHeader>
                             <CardTitle className="text-white text-3xl">
                                 Let's build something exceptional
                             </CardTitle>
                         </CardHeader>
                         <CardDescription>
-                            <p className="text-sm text-muted">
+                            <p className="text-sm text-muted mt-2">
                                 Fast responses. Transparent pricing. Results that convert.
                             </p>
 
@@ -77,7 +77,7 @@ export default function Connect() {
 
                                 <div>
                                     <Button
-                                        className="font-bold flex items-center gap-2"
+                                        className="font-bold flex items-center gap-2 w-full lg:w-fit"
                                         variant="default"
                                         size="lg"
                                     >

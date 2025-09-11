@@ -60,7 +60,7 @@ export default function PriceCard({
                 </CardDescription>
             </CardContent>
             <CardFooter className="p-0 mt-4">
-                <Button variant="default" size="lg" className="flex items-center gap-2">
+                <Button variant="default" size="lg" className="flex items-center gap-2 w-full ">
                     Request a quote <ArrowRight />
                 </Button>
             </CardFooter>

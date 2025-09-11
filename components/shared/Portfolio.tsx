@@ -5,7 +5,7 @@ import { PORTFOLIO } from "@/lib/constants";
 
 const Portfolio = () => {
     return (
-        <section className="px-8 mt-20 h-full" id="portfolio">
+        <section className="px-4 mt-10 lg:mt-20 h-full" id="portfolio">
             <div className="flex flex-col gap-6 items-center justify-center text-center">
                 <div className="lg:max-w-3xl w-full space-y-4">
                     <Badge title="Our Achievements" />

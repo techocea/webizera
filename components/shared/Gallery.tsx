@@ -4,13 +4,17 @@ import React from "react";
 
 const Gallery = () => {
     return (
-        <div className="lg:max-w-5xl mask-x-fade mt-10 py-6 sm:py-8 mx-auto w-full">
+        <div className="lg:max-w-5xl mask-x-fade mt-10 py-6 sm:py-8 mx-auto px-0 w-full">
             <div className="flex items-end justify-center gap-8">
-                {GALLERY.map((item) => (
+                {GALLERY.map((item, index) => (
                     <div
                         key={item.id}
-                        className={`relative w-[150px] sm:w-[160px] md:w-[280px] aspect-[4/3] rounded-2xl overflow-hidden glass border-white/10 shadow-soft hover:shadow-glow-green transition-all duration-300 ${item.id % 2 === 0 ? "rotate-[3deg]" : "rotate-[-4deg]"
-                            }  hover:rotate-0`}
+                        className={`relative w-[150px] sm:w-[160px] md:w-[280px] aspect-[4/3] rounded-2xl overflow-hidden glass border-white/10 shadow-soft hover:shadow-glow-green transition-all duration-300 
+      ${item.id % 2 === 0 ? "rotate-[3deg]" : "rotate-[-4deg]"}  
+      hover:rotate-0
+      ${index > 2 ? "hidden md:block" : ""
+                            } // show first 3 always, hide extras on small screens
+    `}
                     >
                         <Image
                             src={item.imageSrc}

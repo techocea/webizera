@@ -3,21 +3,13 @@ import { Button } from "../ui/button";
 import Badge from "./Badge";
 import Gallery from "./Gallery";
 
-const socialMedia = [
-  { title: "Instagram", url: "https://www.instagram.com/webizera.co/" },
-  {
-    title: "Facebook",
-    url: "https://web.facebook.com/profile.php?id=61550819112955",
-  },
-];
-
 export default function Hero() {
   return (
     <section className="h-full py-12 px-4">
       <div className="flex flex-col text-center items-center justify-center">
         <div className="lg:max-w-3xl w-full flex flex-col items-center justify-center gap-6">
           <Badge title="Based in Sri Lanka • Worldwide delivery" />
-          <h1 className="text-3xl lg:text-7xl text-white font-bold leading-[64px] lg:leading-[80px]">
+          <h1 className="text-4xl lg:text-7xl text-white font-bold leading-[40px] lg:leading-[80px]">
             we create solutions adapted to your needs
           </h1>
           <p className="font-regular lg:text-lg text-muted">

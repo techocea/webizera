@@ -6,7 +6,7 @@ import HeaderTitle from "./HeaderTitle";
 
 const Testimonials = () => {
     return (
-        <section className="px-8 my-32" id="services">
+        <section className="px-4 mt-16 lg:mt-20" id="services">
             <div className="flex flex-col gap-6 items-center justify-center text-center">
                 <div className="lg:max-w-3xl w-full space-y-4">
                     <Badge title="Testimonials" />
@@ -16,7 +16,7 @@ const Testimonials = () => {
                     </p>
                 </div>
             </div>
-            <BentoGrid className="max-w-5xl mx-auto mt-16">
+            <BentoGrid className="max-w-5xl mx-auto mt-10 lg:mt-12">
                 {TESTIMONIALS.map((item, i) => (
                     <BentoGridItem
                         key={i}

@@ -17,11 +17,11 @@ export default function ServiceCard({
   description,
 }: ServiceCardProps) {
   return (
-    <div className={`flex flex-col  ${id === 2 || id === 4 ? "md:flex-row-reverse" : "md:flex-row"} items-center justify-between gap-3 bg-transparent p-4`}>
-      <div className="flex flex-col items-start text-left gap-3 max-w-sm w-full">
+    <div className={`flex flex-col  ${id === 2 || id === 4 ? "md:flex-row-reverse" : "md:flex-row"} items-center justify-between gap-3 lg:gap-10 bg-transparent p-4`}>
+      <div className="flex flex-col lg:items-start items-center text-center lg:text-left gap-3 max-w-sm w-full">
         <Badge title={step} />
-        <h2 className="font-bold text-white text-3xl">{title}</h2>
-        <p className="text-lg font-normal text-muted-foreground">
+        <h2 className="font-bold text-white text-2xl lg:text-3xl">{title}</h2>
+        <p className="lg:text-lg text-sm font-normal text-muted-foreground">
           {description}
         </p>
       </div>

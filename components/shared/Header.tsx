@@ -17,14 +17,14 @@ const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <div className="relative w-full max-w-3xl mx-auto rounded-full">
+        <div className="relative">
             <Navbar>
                 {/* Desktop Navigation */}
                 <NavBody>
                     <NavbarLogo />
                     <NavItems items={NAV_ITEMS} />
                     <div className="flex items-center gap-4">
-                        <NavbarButton variant="primary" className="bg-primary">Request Quote</NavbarButton>
+                        <NavbarButton variant="primary" >Request Quote</NavbarButton>
                     </div>
                 </NavBody>
 
@@ -47,7 +47,7 @@ const Header = () => {
                                 key={`mobile-link-${idx}`}
                                 href={item.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="relative text-neutral-600 dark:text-neutral-300"
+                                className="relative text-muted-foreground capitalize"
                             >
                                 <span className="block">{item.label}</span>
                             </a>
@@ -64,7 +64,7 @@ const Header = () => {
                     </MobileNavMenu>
                 </MobileNav>
             </Navbar>
-        </div>
+        </div >
     );
 };
 
