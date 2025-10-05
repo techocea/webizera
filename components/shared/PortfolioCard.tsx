@@ -28,7 +28,6 @@ const PortfolioCard = ({ imageSrc, name, description }: PortfolioCardProps) => {
                     <CardItem
                         translateZ={20}
                         as="a"
-                        href="https://twitter.com/mannupaaji"
                         target="__blank"
                         className="rounded-xl text-xl font-normal text-white"
                     >

@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Pricing() {
     return (
-        <section className="px-4 mt-16 lg:mt-20" id="services">
+        <section className="px-4 mt-16 lg:max-w-6xl xl:max-w-5xl w-full mx-auto lg:mt-20 h-full" id="services">
             <div className="flex flex-col gap-6 items-center justify-center text-center">
                 <div className="lg:max-w-3xl w-full space-y-4">
                     <Badge title="Services" />
