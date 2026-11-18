@@ -1,25 +1,25 @@
-import Services from "@/components/shared/Services";
-import Hero from "@/components/shared/Hero";
-import Portfolio from "@/components/shared/Portfolio";
-import Pricing from "@/components/shared/Pricing";
-import Connect from "@/components/shared/Connect";
-import Footer from "@/components/shared/Footer";
-import Header from "@/components/shared/Header";
-import Testimonials from "@/components/shared/Testimonials";
-import Stats from "@/components/shared/Stats";
+import {HeroSection} from "@/components/sections/HeroSection";
+import {BeliefProblemSection} from "@/components/sections/BeliefProblemSection";
+import {MonumentalBrandSection} from "@/components/sections/MonumentalBrandSection";
+import {CapabilitiesSection} from "@/components/sections/CapabilitiesSection";
+import {PortfolioSection} from "@/components/sections/PortfolioSection";
+import {ApproachSection} from "@/components/sections/ApproachSection";
+import {ProofFounderSection} from "@/components/sections/ProofFounderSection";
+import {FaqSection} from "@/components/sections/FaqSection";
+import {CtaSection} from "@/components/sections/CtaSection";
 
 export default function Home() {
-  return (
-    <div className="hero-vignette">
-      <Header />
-      <Hero />
-      <Portfolio />
-      <Services />
-      <Stats />
-      <Pricing />
-      <Testimonials />
-      <Connect />
-      <Footer />
-    </div>
-  );
+    return (
+        <>
+            <HeroSection/>
+            <BeliefProblemSection/>
+            <CapabilitiesSection/>
+            <MonumentalBrandSection/>
+            <PortfolioSection/>
+            <ApproachSection/>
+            <ProofFounderSection/>
+            <CtaSection/>
+            <FaqSection/>
+        </>
+    );
 }
