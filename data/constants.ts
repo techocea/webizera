@@ -441,3 +441,21 @@ export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
     },
   ],
 };
+
+export const PRINCIPLES = [
+  {
+    number: '01',
+    title: 'Scope before aesthetics',
+    body: 'Visual polish cannot save an unclear booking flow or broken lead routing. Every engagement begins by mapping how customers discover you and what manual steps slow your team down.',
+  },
+  {
+    number: '02',
+    title: 'Direct engineering communication',
+    body: 'Questions are answered by the person designing and writing the system—keeping weekly feedback cycles fast, practical, and free of agency translation errors.',
+  },
+  {
+    number: '03',
+    title: 'Clean ownership at handover',
+    body: 'You receive documented TypeScript code, clean deployment architecture, and full control over your domain, content, and customer records without proprietary lock-in.',
+  },
+];
