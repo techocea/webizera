@@ -6,4 +6,5 @@ export const AGENCY_ASSETS = {
         realestate: '/images/case_study_realestate_system_1794734336894.jpg',
         operations: '/images/case_study_operations_dashboard_1794734339640.jpg',
     },
+    linkedIn: '/linkedIn.svg'
 } as const;
