@@ -55,7 +55,6 @@ export const PROBLEMS = [
   },
 ];
 
-
 export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
   services: [
     {

@@ -93,7 +93,7 @@ export function Footer() {
                                     />
                                 </a>
                                 <a
-                                    href="https://wa.me/94770000000?text=Hi%20Brightly%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Webizera."
+                                    href="https://wa.me/94724388956?text=Hi%20Brightly%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Webizera."
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label="WhatsApp Webizera"

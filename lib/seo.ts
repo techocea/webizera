@@ -64,7 +64,7 @@ export const ORGANIZATION_GRAPH_JSON_LD = {
             email: 'hello@webizera.com',
             address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'Colombo',
+                addressLocality: 'Negombo',
                 addressCountry: 'LK',
             },
             description:

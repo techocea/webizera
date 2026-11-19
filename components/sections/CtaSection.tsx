@@ -66,7 +66,7 @@ export function CtaSection() {
                 WhatsApp
               </span>
                             <a
-                                href="https://wa.me/94770000000?text=Hi%20Brightly%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Webizera."
+                                href="https://wa.me/94724388956?text=Hi%20Brightly%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20Webizera."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-[#F4F4F8] hover:text-[#C4B5FD] transition-colors"
@@ -81,7 +81,7 @@ export function CtaSection() {
                 LinkedIn
               </span>
                             <a
-                                href="https://www.linkedin.com/in/brightlydunsford"
+                                href="https://www.linkedin.com/in/brightly-dunsford"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-[#F4F4F8] hover:text-[#C4B5FD] transition-colors underline underline-offset-4 decoration-white/20 hover:decoration-[#8B5CF6]"
@@ -96,7 +96,7 @@ export function CtaSection() {
               </span>
                             <span className="inline-flex items-center gap-1.5 text-[#A6A5B5]">
                 <MapPin className="w-4 h-4 text-[#A78BFA]" aria-hidden="true"/>
-                <span>Colombo, Sri Lanka · Open for projects</span>
+                <span>Negombo, Sri Lanka · Open for projects</span>
               </span>
                         </div>
                     </div>
