@@ -142,10 +142,10 @@ export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
       industry: 'Healthcare & Clinics',
       projectType: 'Booking System & Patient Portal',
       statusLabel: 'Private client project · Live site no longer publicly available',
-      deliveryYear: '2025',
+      deliveryYear: '2026',
       isLive: false,
       availabilityNotice:
-          'Private client project delivered in 2025. Access is restricted to clinic staff and patients; live site no longer publicly available. Interface walkthrough screenshots are available on request.',
+          'Private client project delivered in 2026. Access is restricted to clinic staff and patients; live site no longer publicly available. Interface walkthrough screenshots are available on request.',
       oneLineOutcome:
           'Replaced phone-only appointment booking and paper intake forms with a structured online scheduling and pre-visit workflow.',
       imageKey: 'clinic',
@@ -200,10 +200,10 @@ export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
       industry: 'Hospitality & Tourism',
       projectType: 'Digital Presence & Direct Booking Flow',
       statusLabel: 'Past project · Live site no longer publicly available',
-      deliveryYear: '2024',
+      deliveryYear: '2026',
       isLive: false,
       availabilityNotice:
-          'Past project delivered in 2024. Live site no longer publicly available following a change in property management.',
+          'Past project delivered in 2026. Live site no longer publicly available following a change in property management.',
       oneLineOutcome:
           'Built a direct-booking hospitality platform to capture stays and airport transfers without third-party marketplace friction.',
       imageKey: 'villa',
@@ -258,10 +258,10 @@ export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
       industry: 'Real Estate',
       projectType: 'Property Portal & Lead Routing Dashboard',
       statusLabel: 'Past project · Live site no longer publicly available',
-      deliveryYear: '2024',
+      deliveryYear: '2026',
       isLive: false,
       availabilityNotice:
-          'Past project delivered in 2024. Live site no longer publicly available.',
+          'Past project delivered in 2026. Live site no longer publicly available.',
       oneLineOutcome:
           'Structured property listings and automated buyer qualification so sales advisors focused on verified, ready-to-view inquiries.',
       imageKey: 'realestate',
@@ -316,10 +316,10 @@ export const DEFAULT_AGENCY_CONTENT: AgencyContent = {
       industry: 'Local & B2B Services',
       projectType: 'Client Portal & Operations Dashboard',
       statusLabel: 'Private client project · Live site no longer publicly available',
-      deliveryYear: '2025',
+      deliveryYear: '2026',
       isLive: false,
       availabilityNotice:
-          'Private client project delivered in 2025. Because it serves internal operations and client accounts, the live system is not publicly accessible.',
+          'Private client project delivered in 2026. Because it serves internal operations and client accounts, the live system is not publicly accessible.',
       oneLineOutcome:
           'Consolidated service requests, client approvals, invoice triggers, and webhook logs into one internal operations portal.',
       imageKey: 'operations',
